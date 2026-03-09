@@ -18,7 +18,7 @@ export default function AuthPage({ onAuth }) {
     }
     setLoading(true);
     try {
-      const res = await fetch(`https://propzen-1.onrender.com/api/${mode}`, {
+      const res = await fetch(`https://propzen-2.onrender.com/api/${mode}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form)
