@@ -9,7 +9,7 @@ export default function ResultPage({ user, location, details, onNext }) {
   useEffect(() => {
     (async () => {
       try {
-        const res = await fetch('http://localhost:5000/api/predict', {
+        const res = await fetch('https://propzen.onrender.com/api/predict', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(details)

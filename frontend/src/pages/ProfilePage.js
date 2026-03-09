@@ -15,7 +15,7 @@ export default function ProfilePage({ user, onProfileSaved }) {
     if (!form.phone || !form.age || !form.occupation) return setError('Please fill all required fields.');
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:5000/api/profile', {
+      const res = await fetch('https://propzen.onrender.com/api/profile', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...form, email: user.email })
